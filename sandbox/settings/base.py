@@ -24,9 +24,12 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 # Application definition
 
 INSTALLED_APPS = [
+    # sandbox
     "sandbox.home",
     "sandbox.search",
     "sandbox.shop",
+
+    # wagtail
     "wagtail.contrib.forms",
     "wagtail.contrib.redirects",
     "wagtail.contrib.settings",
@@ -48,10 +51,13 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
+    # wagtail-retail
     "wagtail_retail.basket",
     "wagtail_retail.checkout",
     "wagtail_retail.order",
     "wagtail_retail.core",
+    "wagtail_retail.billing",
 ]
 
 MIDDLEWARE = [
