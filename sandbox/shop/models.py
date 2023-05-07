@@ -16,4 +16,3 @@ class ProductPage(BaseProductPage):
 
 class ProductVariantPage(BaseProductVariant, Page):
     parent_page_types = [ProductPage]
-    # subpage_types = []

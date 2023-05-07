@@ -177,8 +177,3 @@ WAGTAILSEARCH_BACKENDS = {
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 WAGTAILADMIN_BASE_URL = "http://example.com"
-
-
-WAGTAIL_RETAIL_SHOP_HOME_PAGE_MODEL = "shop.ShopHomePage"
-WAGTAIL_RETAIL_PRODUCT_PAGE_MODEL = "shop.ProductPage"
-WAGTAIL_RETAIL_PRODUCT_VARIANT_MODEL = "shop.ProductVariantPage"

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load wagtailcore_tags wagtailimages_tags wagtailretailcore_tags %}
+
+{% block content %}
+{% shop_title %}
+
+<ul>
+    {% for product in products %}
+        <li>
+            {{ product.title }}
+            {{ product.summary|richtext }}
+            {% image product.main_image width-400 %}
+            <button>
+                <a href="{% pageurl product %}">View</a>
+            </button>
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}
