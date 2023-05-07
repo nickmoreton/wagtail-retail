@@ -5,4 +5,7 @@
 <h1>{{ page.title }}</h1>
 {% image page.main_image width-400 %}
 {{ page.body|richtext }}
+
+{% include "wagtail_retail/core/pages/variants.html" with variants=variants %}
+
 {% endblock content %}

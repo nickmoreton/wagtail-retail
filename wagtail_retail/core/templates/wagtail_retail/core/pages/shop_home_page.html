@@ -2,7 +2,7 @@
 {% load wagtailcore_tags wagtailimages_tags wagtailretailcore_tags %}
 
 {% block content %}
-{% shop_title %}
+{% if shop_title %}{% shop_title %}{% endif %}
 
 <ul>
     {% for product in products %}
